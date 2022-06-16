@@ -10,8 +10,8 @@ function App() {
     <div className="App">
     
       <Hello />
-     
-      <div className={styles.box}>App</div>
+      <Hello />
+      <Hello />
     </div>
   );
 }
