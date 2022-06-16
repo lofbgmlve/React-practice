@@ -9,9 +9,9 @@ export default function Hello(){
     console.log(age);
   }
 
- // function showText(e){
-  //  console.log(e.target.value);
-  //}
+  function showText(txt){
+    console.log(txt);
+  }
   return ( 
   <div>
        <h1>Hello</h1>
@@ -24,7 +24,8 @@ export default function Hello(){
         </button>
        <input type="text" 
        onChange={e => {
-        console.log(e.target.value);
+        const txt = e.target.value;
+        showText(txt);
        }}
        />
   </div>
